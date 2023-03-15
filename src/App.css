@@ -1,38 +1,190 @@
-.App {
-  text-align: center;
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #4b4b4b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sub-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sub-container input {
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    margin-right: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: #3d3d3d;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+    background-color: rgb(126, 59, 189);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-container-2 {
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-self: center;
+    width: 50%;
+    margin-top: 20px;
+    gap: 1rem;
+    height: 60vh;
+    background-color: #3d3d3d;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.icon {
+    /* flex: 1 100%; */
+    height: 40%;
+    padding: 25px 0px 10px 0px;
+    /* padding-bottom: 25px; */
+    background: #3d3d3d;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 100px;
+    color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   
+}
+
+
+
+.sub-div {
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    color: whitesmoke;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.sub-div-2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 0px;
+    color: whitesmoke;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.icon-1, .icon-2, .icon-3, .icon-4 {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 814px){
+
+    
+.sub-container {
+    width: 70%;
+}
+
+
+
+.btn {
+    padding: 10px 10px 10px 10px;
+}
+
+.sub-container-2 {
+    width: 80%;
+}
+
+.sub-div {
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.sub-1 {
+    padding: 10px;
+}
+.sub-2 {
+    padding: 10px;
+}
+
+.sub-div-2 {
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.sub-div-2 p {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.icon-1, .icon-2, .icon-3, .icon-4 {
+    gap: 0.5rem;
+    /* padding: 5px; */
+}
+
+
+}
+
+@media screen and (max-width: 613px){
+
+    .sub-container {
+        width: 80%;
+    }
+
+
+    .sub-container-2 {
+       height: 80vh; 
+       width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 287px){
+
+    .sub-container-2 {
+        height: 85vh;
+        padding: 10px 5px 10px 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
