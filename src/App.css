@@ -3,7 +3,7 @@
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
 
-.main-container {
+/* .main-container {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -13,7 +13,6 @@
 }
 
 .sub-container {
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -48,7 +47,6 @@
 }
 
 .sub-container-2 {
-    /* border: 2px solid green; */
     border-radius: 5px;
     padding: 10px;
     display: flex;
@@ -65,10 +63,8 @@
 }
 
 .icon {
-    /* flex: 1 100%; */
     height: 40%;
     padding: 25px 0px 10px 0px;
-    /* padding-bottom: 25px; */
     background: #3d3d3d;
     display: flex;
     align-items: center;
@@ -90,7 +86,6 @@
     padding: 10px 0px 10px 0px;
     align-items: center;
     color: whitesmoke;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -99,7 +94,6 @@
     justify-content: space-evenly;
     padding: 10px 0px 10px 0px;
     color: whitesmoke;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -152,7 +146,6 @@
 
 .icon-1, .icon-2, .icon-3, .icon-4 {
     gap: 0.5rem;
-    /* padding: 5px; */
 }
 
 
@@ -183,8 +176,166 @@
 
 
 
+ */
 
 
 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .main-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(6, 6, 35); */
+    background-image: url(assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .container {
+    width: 80%;
+    height: 90vh;
+   background-color: #74baffa9;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+ }
+
+ .nav {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 90px 25px 90px;
+    align-items: center;
+
+ }
 
 
+ .box {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+ }
+ .box h3 {
+    font-size: 40px;
+    font-weight:900;
+ }
+ .box p {
+    font-size: 18px;
+    color: rgb(63, 62, 62);
+ }
+
+ .sub-container {
+    display: flex;
+    gap: 1.5rem;
+    width: 40%;
+ }
+ .sub-container input {
+    width: 100%;
+ }
+
+ .sub-container input[type="text"] {
+    padding: 13px 20px 13px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+    color: rgb(185, 176, 176);
+    font-size: 16px;
+
+ }
+
+ .btn {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: #097cef;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    font-size: 16px;
+    color: white;
+ }
+ .btn:hover {
+    background-color: #0670c1;
+    color: white;
+ }
+
+
+ @media screen and (max-width: 968px) {
+
+    .container {
+        width: 95%;
+     }
+
+     .nav {
+        padding: 40px 60px 25px 60px;
+     }
+ }
+
+ @media screen and (max-width: 744px) {
+
+    .main-container {
+        padding: 20px;
+        height: auto;
+    }
+    .container {
+        height: 110vh;
+     }
+    
+     .nav {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        padding: 40px 20px 25px 20px;
+     }
+     .box {
+        text-align: center;
+     }
+     .box h3 {
+        font-size: 45px;
+     }
+     .box p {
+        font-size: 20px;
+     }
+
+     .sub-container {
+        width: 70%;
+     }
+
+ }
+
+
+ @media screen and (max-width: 728px) {
+    .box-container-2 {
+        flex-wrap: wrap;
+    }
+    .box-1 {
+       flex-direction: row;
+       width: 40%;
+       height: 15vh;
+    }
+}
+
+@media screen and (max-width: 442px) {
+
+    .sub-container {
+        width: 100%;
+     }
+
+     .container {
+        height: 110vh;
+        width: 100%;
+     }
+     .main-container {
+        padding: 0px;
+     }
+}
